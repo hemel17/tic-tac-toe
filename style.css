@@ -1,0 +1,45 @@
+#gameDiv {
+  font-family: cursive;
+  font-size: 24px;
+  text-align: center;
+}
+
+.cell {
+  height: 75px;
+  width: 75px;
+  border: 2px solid;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+#cells {
+  
+  margin: 0 auto;
+  width: 225px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.cell:nth-child(1n){
+    border-top: 0;
+    border-left: 0;
+}
+.cell:nth-child(3n){   
+    border-right: 0;
+}
+
+.cell:nth-child(6) ~ .cell{
+    border-bottom: 0;
+}
+
+#restartBtn{
+    width: 100px;
+    height: 40px;
+    background-color: orangered;
+    font-family: cursive;
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
